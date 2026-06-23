@@ -38,7 +38,7 @@
         <div class="hidden md:flex space-x-6 text-sm font-medium">
             <span class="cursor-pointer hover:underline" onclick="switchPage('home')">Home</span>
             <span class="cursor-pointer hover:underline" onclick="switchPage('classes')">Classes</span>
-            <span class="cursor-pointer hover:underline" onclick="document.getElementById('booking-section').scrollIntoView({behavior: 'smooth'})">Book Appointment</span>
+            <span class="cursor-pointer hover:underline" onclick="navigateToBooking()">Book Appointment</span>
         </div>
         <div class="flex items-center space-x-2">
             <div class="relative flex items-center">
@@ -74,7 +74,7 @@
                     An easy, salon-quality mani for whenever the mood strikes, no matter what's on your calendar.
                 </p>
                 <div class="space-y-4">
-                    <button onclick="document.getElementById('booking-section').scrollIntoView({behavior: 'smooth'})" class="bg-white text-black text-xs uppercase tracking-widest px-6 py-3 rounded-full hover:bg-gray-200 transition font-semibold">
+                    <button onclick="navigateToBooking()" class="bg-white text-black text-xs uppercase tracking-widest px-6 py-3 rounded-full hover:bg-gray-200 transition font-semibold">
                         Book An Appointment
                     </button>
                     <p class="text-xs tracking-wider font-semibold block pt-2">Strictly for appointments: <a href="tel:0824239317" class="underline">0824239317</a></p>
@@ -427,6 +427,20 @@
             window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
+        // INTELLIGENT ROUTER FUNCTION FOR BOOK APPOINTMENT BUTTONS
+        function navigateToBooking() {
+            // Ensure we are viewing the home view panel where the Instant Booking Panel component lives
+            switchPage('home');
+            
+            // Execute seamless window viewport scrolling down to the panel element ID target
+            setTimeout(() => {
+                const element = document.getElementById('booking-section');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 50);
+        }
+
         // WHATSAPP APPOINTMENT PROCESSING
         function sendAppointmentWhatsApp(e) {
             e.preventDefault();
@@ -437,7 +451,7 @@
             
             const message = `Hello The Nail Technique, my name is ${name} (${phone}). I would like to book an appointment for: ${type}. Preferred timeframe: ${time}.`;
             const encodedMessage = encodeURIComponent(message);
-            window.open replay(`https://wa.me/27824239317?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/27824239317?text=${encodedMessage}`, '_blank');
         }
 
         // WHATSAPP CLASS ENQUIRY PROCESSING
