@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nail Technique - Sets for Every Summer Plan</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .serif-font { font-family: 'Playfair Display', serif; }
+        /* Background video switcher setup */
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            z-index: 0;
+        }
+        .video-bg.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+    <header class="border-b border-gray-200 py-4 px-6 flex justify-between items-center sticky top-0 bg-white z-50">
+        <div class="text-xl font-bold tracking-widest serif-font uppercase">The Nail Technique</div>
+        <div class="hidden md:flex space-x-4 text-sm font-medium">
+            <span class="cursor-pointer hover:underline">Nails</span>
+            <span class="cursor-pointer hover:underline">Collections</span>
+            <span class="cursor-pointer hover:underline">Classes</span>
+        </div>
+        <div class="flex items-center space-x-2">
+            <div class="relative flex items-center">
+                <input type="text" placeholder="Search..." class="border border-gray-300 rounded-full px-3 py-1 text-xs focus:outline-none focus:border-black w-32 md:w-48">
+                <button class="absolute right-2 text-gray-500 hover:text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative py-24 px-8 md:px-16 flex flex-col md:flex-row items-center justify-between min-h-[550px] overflow-hidden bg-black text-white">
+        <video class="video-bg active" autoplay loop muted playsinline>
+            <source src="video01.mp4" type="video/mp4">
+        </video>
+        <video class="video-bg" autoplay loop muted playsinline>
+            <source src="video02.mp4" type="video/mp4">
+        </video>
+        <video class="video-bg" autoplay loop muted playsinline>
+            <source src="video03.mp4" type="video/mp4">
+        </video>
+
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+
+        <div class="max-w-xl space-y-6 relative z-20">
+            <h1 class="text-4xl md:text-6xl font-light serif-font leading-tight">
+                Sets for Every<br><span class="italic">Summer Plan</span>
+            </h1>
+            <p class="text-gray-200 text-sm md:text-base">
+                An easy, salon-quality mani for whenever the mood strikes, no matter what's on your calendar.
+            </p>
+            <div class="space-y-2">
+                <button class="bg-white text-black text-xs uppercase tracking-widest px-6 py-3 rounded-full hover:bg-gray-200 transition font-semibold">
+                    Shop xPress/ON
+                </button>
+                <p class="text-xs tracking-wider font-semibold block pt-2">Strictly for appointments: <a href="tel:0824239317" class="underline">0824239317</a></p>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 flex justify-center mt-8 md:mt-0 relative z-20">
+            <img src="image01.jpg" alt="Hero Hand Display" class="w-72 h-72 object-cover rounded-full border border-white/20 shadow-xl">
+        </div>
+    </section>
+
+    <section class="py-12 px-6 max-w-7xl mx-auto bg-gray-50 my-8 rounded-xl">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+            <h2 class="text-2xl font-semibold serif-font mb-2">The Nail Technique Classes</h2>
+            <p class="text-xs text-gray-500 uppercase tracking-widest">Master your craft with our intensive practical courses</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-lg shadow-xs border border-gray-100 text-center">
+                <span class="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Beginner Track</span>
+                <h3 class="text-xl font-bold mb-2">5 Day Course</h3>
+                <p class="text-2xl font-light serif-font text-gray-900 mb-4">R6 000</p>
+                <a href="tel:0824239317" class="block bg-black text-white text-xxs uppercase tracking-wider py-2 rounded-md hover:bg-gray-800">Enquire Now</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-xs border border-gray-100 text-center">
+                <span class="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Intermediate Track</span>
+                <h3 class="text-xl font-bold mb-2">10 Day Course</h3>
+                <p class="text-2xl font-light serif-font text-gray-900 mb-4">R8 500</p>
+                <a href="tel:0824239317" class="block bg-black text-white text-xxs uppercase tracking-wider py-2 rounded-md hover:bg-gray-800">Enquire Now</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-xs border border-gray-100 text-center">
+                <span class="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Advanced Track</span>
+                <h3 class="text-xl font-bold mb-2">15 Day Course</h3>
+                <p class="text-2xl font-light serif-font text-gray-900 mb-4">R10 500</p>
+                <a href="tel:0824239317" class="block bg-black text-white text-xxs uppercase tracking-wider py-2 rounded-md hover:bg-gray-800">Enquire Now</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-xs border border-gray-100 text-center">
+                <span class="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Master Masterclass</span>
+                <h3 class="text-xl font-bold mb-2">20 Day Course</h3>
+                <p class="text-2xl font-light serif-font text-gray-900 mb-4">R13 500</p>
+                <a href="tel:0824239317" class="block bg-black text-white text-xxs uppercase tracking-wider py-2 rounded-md hover:bg-gray-800">Enquire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-6 max-w-7xl mx-auto">
+        <h2 class="text-xl font-semibold mb-6 serif-font">Shop By Nail Polish Colors</h2>
+        <div class="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-12 gap-1">
+            <div class="aspect-square bg-pink-300"></div>
+            <div class="aspect-square bg-pink-400"></div>
+            <div class="aspect-square bg-pink-500"></div>
+            <div class="aspect-square bg-rose-400"></div>
+            <div class="aspect-square bg-fuchsia-300"></div>
+            <div class="aspect-square bg-pink-200"></div>
+            <div class="aspect-square bg-rose-200"></div>
+            <div class="aspect-square bg-pink-100"></div>
+            <div class="aspect-square bg-orange-300"></div>
+            <div class="aspect-square bg-red-400"></div>
+            <div class="aspect-square bg-pink-600"></div>
+            <div class="aspect-square bg-rose-500"></div>
+            <div class="aspect-square bg-pink-200"></div>
+            <div class="aspect-square bg-orange-100"></div>
+            <div class="aspect-square bg-rose-100"></div>
+            <div class="aspect-square bg-pink-300"></div>
+            <div class="aspect-square bg-fuchsia-400"></div>
+            <div class="aspect-square bg-purple-300"></div>
+            <div class="aspect-square bg-pink-400"></div>
+            <div class="aspect-square bg-rose-300"></div>
+            <div class="aspect-square bg-pink-500"></div>
+            <div class="aspect-square bg-fuchsia-500"></div>
+            <div class="aspect-square bg-rose-400"></div>
+            <div class="aspect-square bg-pink-300"></div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="#" class="text-xs font-semibold underline uppercase tracking-wider text-gray-600">See More Shades</a>
+        </div>
+    </section>
+
+    <hr class="border-gray-100 max-w-7xl mx-auto">
+
+    <section class="py-12 px-6 max-w-7xl mx-auto">
+        <h2 class="text-xl font-semibold mb-2 serif-font">Shop the Products</h2>
+        <div class="flex space-x-6 text-xs uppercase tracking-wider text-gray-500 mb-8 border-b border-gray-100 pb-3 overflow-x-auto whitespace-nowrap">
+            <span class="text-black font-semibold border-b-2 border-black pb-3 cursor-pointer">Press-On Nails</span>
+            <span class="cursor-pointer hover:text-black">Nail Lacquer & Infinite Shine</span>
+            <span class="cursor-pointer hover:text-black">GelColor & Nail Art</span>
+            <span class="cursor-pointer hover:text-black">Treatments & Remover</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="bg-pink-100 p-6 flex flex-col justify-between rounded-lg min-h-[350px]">
+                <div>
+                    <h3 class="font-bold text-lg mb-2 serif-font">Explore mani formats, treatments, and tools to find your match.</h3>
+                </div>
+                <img src="image02.jpg" alt="Featured Format" class="w-full h-40 object-cover rounded shadow-xs">
+            </div>
+
+            <div class="bg-pink-50 p-6 flex flex-col justify-between rounded-lg border border-pink-100 text-center">
+                <div>
+                    <span class="text-xs text-pink-600 font-bold uppercase tracking-widest block mb-2">Makeup Effect</span>
+                    <p class="text-sm text-gray-600">For perfect nails instantly without the dry time.</p>
+                </div>
+                <button class="mt-6 border border-black text-xs uppercase tracking-widest py-2 rounded-full hover:bg-black hover:text-white transition">Shop xPress</button>
+            </div>
+
+            <div class="bg-pink-50 p-6 flex flex-col justify-between rounded-lg border border-pink-100 text-center">
+                <div>
+                    <span class="text-xs text-pink-600 font-bold uppercase tracking-widest block mb-2">Longwear</span>
+                    <p class="text-sm text-gray-600">Classic dynamic colors with up to 7 days of chip-resistant wear.</p>
+                </div>
+                <button class="mt-6 border border-black text-xs uppercase tracking-widest py-2 rounded-full hover:bg-black hover:text-white transition">Shop Now</button>
+            </div>
+
+            <div class="bg-pink-50 p-6 flex flex-col justify-between rounded-lg border border-pink-100 text-center">
+                <div>
+                    <span class="text-xs text-pink-600 font-bold uppercase tracking-widest block mb-2">Gel Polish</span>
+                    <p class="text-sm text-gray-600">High gloss, salon-reliable shine that stays vibrant for weeks.</p>
+                </div>
+                <button class="mt-6 border border-black text-xs uppercase tracking-widest py-2 rounded-full hover:bg-black hover:text-white transition">Shop Gel</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-3 bg-rose-500 text-white">
+        <div class="p-12 flex flex-col justify-center space-y-4 col-span-1">
+            <h2 class="text-3xl font-light serif-font">Strawberry Margarita Summer</h2>
+            <p class="text-sm text-rose-100">Hot weather, cold drinks, bold nails. Recreate the ultimate vibrant summer look.</p>
+            <button class="bg-white text-black text-xs uppercase tracking-widest px-6 py-3 rounded-full w-max hover:bg-gray-100 transition">Shop Now</button>
+        </div>
+        <div class="bg-rose-600 p-8 flex flex-col items-center justify-between text-center relative border-l border-rose-400">
+            <img src="image03.jpg" alt="Polish Bottle 1" class="w-40 h-56 object-cover rounded shadow-md mb-4">
+            <div>
+                <p class="font-bold text-sm">Nail Lacquer</p>
+                <p class="text-xs text-rose-200">Strawberry Margarita</p>
+                <button class="mt-3 bg-white text-black text-xs px-4 py-2 rounded-full hover:bg-gray-100">Add to Bag</button>
+            </div>
+        </div>
+        <div class="bg-rose-600 p-8 flex flex-col items-center justify-between text-center relative border-l border-rose-400">
+            <img src="image04.jpg" alt="Polish Bottle 2" class="w-40 h-56 object-cover rounded shadow-md mb-4">
+            <div>
+                <p class="font-bold text-sm">Infinite Shine</p>
+                <p class="text-xs text-rose-200">Strawberry Margarita</p>
+                <button class="mt-3 bg-white text-black text-xs px-4 py-2 rounded-full hover:bg-gray-100">Add to Bag</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-6 max-w-7xl mx-auto">
+        <h2 class="text-2xl font-light serif-font mb-2">Summer Nail Art</h2>
+        <p class="text-gray-500 text-sm mb-6">Nail looks hotter than the weather forecast.</p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="space-y-2">
+                <img src="image05.jpg" alt="Sunset Ombre" class="aspect-square w-full object-cover rounded-lg">
+                <h4 class="font-semibold text-sm">Sunset Ombre</h4>
+                <p class="text-xs text-gray-500">A warm gradient blend perfectly matching golden hour.</p>
+            </div>
+            <div class="space-y-2">
+                <img src="image06.jpg" alt="Neon Blooms" class="aspect-square w-full object-cover rounded-lg">
+                <h4 class="font-semibold text-sm">Neon Blooms</h4>
+                <p class="text-xs text-gray-500">Vibrant floral accents on a bold neon base color.</p>
+            </div>
+            <div class="space-y-2">
+                <img src="image07.jpg" alt="Glazed Chrome" class="aspect-square w-full object-cover rounded-lg">
+                <h4 class="font-semibold text-sm">Glazed Chrome</h4>
+                <p class="text-xs text-gray-500">A sleek, clean, modern minimalist chrome finish.</p>
+            </div>
+            <div class="space-y-2">
+                <img src="image08.jpg" alt="Golden Speck" class="aspect-square w-full object-cover rounded-lg">
+                <h4 class="font-semibold text-sm">Golden Speck</h4>
+                <p class="text-xs text-gray-500">Delicate gold foil overlays on top of a naked base.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-6 max-w-7xl mx-auto border-t border-gray-100">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-light serif-font mb-2">Pro Spotlight</h2>
+                <p class="text-xs text-gray-500 uppercase tracking-widest mb-4">Follow our talent community</p>
+                <a href="https://www.instagram.com/the_nail_technique/" target="_blank" class="inline-block bg-black text-white text-xs uppercase tracking-widest px-6 py-3 rounded-full hover:bg-gray-800 transition">
+                    Follow @the_nail_technique
+                </a>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-3 gap-2">
+                <img src="image09.jpg" alt="Spotlight Content" class="w-full aspect-square object-cover rounded">
+                <img src="image10.jpg" alt="Spotlight Content" class="w-full aspect-square object-cover rounded">
+                <img src="image11.jpg" alt="Spotlight Content" class="w-full aspect-square object-cover rounded">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12 px-6 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-bold text-sm uppercase tracking-wider mb-3 serif-font">Our Location</h3>
+                    <p class="text-sm text-gray-700">
+                        50 Mulbarton road Beverly<br>
+                        In Fourways, South Africa
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-sm uppercase tracking-wider mb-3 serif-font">Working Hours</h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li><span class="font-semibold">Mon - Fri:</span> 9:00 AM - 6:00 PM</li>
+                        <li><span class="font-semibold">Saturdays:</span> Closed</li>
+                        <li><span class="font-semibold">Sundays:</span> 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-sm uppercase tracking-wider mb-2 serif-font">Appointments Only</h3>
+                    <p class="text-sm font-semibold text-rose-600"><a href="tel:0824239317" class="hover:underline">0824239317</a></p>
+                </div>
+            </div>
+            <div class="w-full h-64 md:h-full min-h-[250px] rounded-lg overflow-hidden shadow-xs border border-gray-200">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.7735316335195!2d28.01428257630768!3d-26.02456487718712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95775cc9e9be7d%3A0x6b1db9d7bb336ee3!2s50%20Mulbarton%20Rd%2C%20Beverley%2C%20Sandton%2C%202191!5e0!3m2!1sen!2sza!4v1710000000000!5m2!1sen!2sza" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="font-bold text-sm uppercase tracking-wider mb-4">You've Got Nail</h3>
+                <p class="text-xs text-gray-600 mb-4">Get the latest product drops, exclusive deals, and beauty advice right to your inbox.</p>
+                <div class="flex">
+                    <input type="email" placeholder="Enter your email address" class="border border-gray-300 px-3 py-2 text-xs w-full focus:outline-none focus:border-black rounded-l">
+                    <button class="bg-black text-white text-xs uppercase tracking-widest px-4 rounded-r">Join</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 col-span-2 md:pl-12">
+                <div>
+                    <h4 class="font-semibold text-xs uppercase mb-3">The Nail Technique</h4>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><a href="https://www.instagram.com/the_nail_technique/" target="_blank" class="hover:underline">Instagram Community</a></li>
+                        <li><a href="tel:0824239317" class="hover:underline">Bookings Desk</a></li>
+                        <li><a href="#" class="hover:underline">Training Programs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-xs uppercase mb-3">Customer Support</h4>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><a href="#" class="hover:underline">Contact Info</a></li>
+                        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                        <li><a href="#" class="hover:underline">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center mt-12 pt-6 border-t border-gray-200 text-xs text-gray-400">
+            <div>© 2026 The Nail Technique. All rights reserved.</div>
+            <div class="mt-2 sm:mt-0 tracking-wider text-xxs uppercase">
+                Developed by <a href="https://palexdigital.pages.dev/" target="_blank" class="underline text-gray-600 hover:text-black font-semibold">PALEXDIGITAL</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-black text-white text-center py-8 overflow-hidden select-none">
+        <span class="text-5xl md:text-[8rem] font-bold tracking-widest serif-font opacity-90 block leading-none uppercase">THE NAIL TECHNIQUE</span>
+    </div>
+
+    <script>
+        const videos = document.querySelectorAll('.video-bg');
+        let currentVideoIndex = 0;
+
+        function rotateVideos() {
+            videos[currentVideoIndex].classList.remove('active');
+            currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+            videos[currentVideoIndex].classList.add('active');
+        }
+
+        // Loop dynamic multi-video element changes smoothly every 5 seconds
+        setInterval(rotateVideos, 5000);
+    </script>
+</body>
+</html>
